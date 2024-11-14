@@ -1,0 +1,75 @@
+body{
+    background-color: #222;
+}
+div{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    animation-name: ali;
+    animation-duration: 3s;
+    animation-delay: 0,5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    }
+    @keyframes ali{
+    0%{
+        background-color: ghostwhite;
+    translate: 0 0;
+    rotate: 0  ;
+    
+    }
+    10%{
+        background-color: green;
+    }
+    20%{
+        background-color: aqua;
+    }
+    25%{
+        translate: 0px 400px;
+        rotate: 90deg;
+    }
+    30%{
+        background-color: blueviolet;
+    }
+    40%{
+        background-color: gold;
+    }
+    50%{
+        background-color: skyblue;
+        translate: 1150px 400px;
+        rotate: 180deg;
+    }
+    60%{
+        background-color: oldlace;
+    }
+    70%{
+        background-color: greenyellow;
+    }
+    75%{
+        translate: 1150px 0;
+        rotate: 270deg;
+    }
+    80%{
+        background-color: bisque;
+    }
+    90%{
+        background-color: cornflowerblue;
+    }
+    100%{
+        background-color: blue;
+    translate: 0 0;
+    rotate: 360deg;
+    }
+    }
+    div:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+    h1{
+        font-size: 90px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+    }
